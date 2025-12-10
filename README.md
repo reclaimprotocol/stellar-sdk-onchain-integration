@@ -196,10 +196,4 @@ pub struct Epoch {
 }
 ```
 
-## Security Considerations
-
-- The contract owner has full control over epoch management
-- Proof verification relies on the integrity of witness addresses
-- Ensure witness addresses are correctly configured before verification
-- The contract uses secp256k1 signature recovery, which is standard for Ethereum-style addresses
 
