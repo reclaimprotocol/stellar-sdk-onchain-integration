@@ -74,7 +74,13 @@ stellar contract invoke \
   --user $ACCOUNT
 ```
 
+Note: On Mainnet (Public), you might need to set some suitable transaction fee (`--fee 600000`).
+
 ### Deployed Contracts
+
+**Mainnet:**
+- Contract Address: `CD4M2KHW3ESOV3RUT7KCTC6BX37PIL2Z3BEK47IA74KIMFIFUI3JJDMO`
+- Explorer: [View on Stellar Expert](https://steexp.com/contract/CD4M2KHW3ESOV3RUT7KCTC6BX37PIL2Z3BEK47IA74KIMFIFUI3JJDMO)
 
 **Testnet:**
 - Contract Address: `CBWG6TV76FMWKJX3THMMEMK66JVU7Z43JGX74XMB3IKBAZQL66AXP4D7`
