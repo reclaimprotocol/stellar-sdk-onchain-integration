@@ -83,8 +83,8 @@ Note: On Mainnet (Public), you might need to set some suitable transaction fee (
 - Explorer: [View on Stellar Expert](https://steexp.com/contract/CD4M2KHW3ESOV3RUT7KCTC6BX37PIL2Z3BEK47IA74KIMFIFUI3JJDMO)
 
 **Testnet:**
-- Contract Address: `CBWG6TV76FMWKJX3THMMEMK66JVU7Z43JGX74XMB3IKBAZQL66AXP4D7`
-- Explorer: [View on Stellar Expert](https://stellar.expert/explorer/testnet/contract/CBWG6TV76FMWKJX3THMMEMK66JVU7Z43JGX74XMB3IKBAZQL66AXP4D7)
+- Contract Address: `CA3EMXR6JOOTNP44T3OAJFMMMGKRRETDJKBLZP2RU3SIY4SDFAH54DU5`
+- Explorer: [View on Stellar Expert](https://stellar.expert/explorer/testnet/contract/CA3EMXR6JOOTNP44T3OAJFMMMGKRRETDJKBLZP2RU3SIY4SDFAH54DU5)
 
 ## Contract Functions
 
