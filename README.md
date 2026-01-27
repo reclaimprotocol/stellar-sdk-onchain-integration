@@ -33,8 +33,10 @@ cd stellar-sdk-onchain-integration
 2. Build the contract:
 
 ```bash
-stellar contract build
+soroban contract build
 ```
+
+> **Note:** Use `soroban contract build` instead of `stellar contract build` due to CLI compatibility issues.
 
 This will compile the contract and generate the WASM file at `target/wasm32-unknown-unknown/release/reclaim.wasm`.
 
@@ -45,11 +47,17 @@ This will compile the contract and generate the WASM file at `target/wasm32-unkn
 1. Deploy the contract to Stellar testnet:
 
 ```bash
+export ACCOUNT_ALIAS= # The alias of your deployer account
+```
+
+```bash
 stellar contract deploy \
   --wasm target/wasm32-unknown-unknown/release/reclaim.wasm \
-  --source reclaim \
+  --source $ACCOUNT_ALIAS \
   --network testnet
 ```
+
+> **Note:** Use `stellar contract deploy` instead of `soroban contract deploy` to avoid XDR processing errors.
 
 2. Save the contract address from the output:
 
@@ -68,7 +76,7 @@ export ACCOUNT=<paste-your-public-address-here>
 ```bash
 stellar contract invoke \
   --id $CONTRACT \
-  --source reclaim \
+  --source $ACCOUNT_ALIAS \
   --network testnet \
   -- instantiate \
   --user $ACCOUNT

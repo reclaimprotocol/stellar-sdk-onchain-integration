@@ -182,7 +182,7 @@ impl ReclaimContract {
         }
 
         let full_address = env
-            .crypto()
+            .crypto_hazmat()
             .secp256k1_recover(&message_digest, &signature, recovery_id);
 
         let address_slice = &mut [0; 65];
@@ -198,10 +198,11 @@ impl ReclaimContract {
         let by: BytesN<64> = BytesN::from_array(&env, &slice_bytes);
 
         let hashed_full_address = env.crypto().keccak256(&by.into());
+        let hashed_bytes: BytesN<32> = hashed_full_address.into();
 
         let mut pub_key = [0_u8; 20];
         for i in 12..32 {
-            let byte = hashed_full_address.get(i).unwrap().into();
+            let byte = hashed_bytes.get(i).unwrap().into();
             pub_key[(i - 12) as usize] = byte;
         }
 
